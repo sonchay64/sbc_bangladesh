@@ -1494,8 +1494,8 @@ About Style
   height: 45px;
   width: 45px;
   line-height: 45px;
-  color: #2C2C2C;
-  background-color: #e5e5e5;
+  color: #32CD32;
+  background-color: #00803F;
   border-radius: 5px;
   left: 0;
   top: 5px;
@@ -1518,8 +1518,13 @@ About Style
 }
 .about-content .about-features ul li h3 {
   font-size: 20px;
-  margin-bottom: 10px;
+  /*margin-bottom: 10px;*/
+  margin-bottom: 3rem;
   transition: all ease 0.5s;
+}
+
+.skill-content .about-content .about-features ul li h3 {
+  margin-bottom: 10px;
 }
 .about-content .about-features ul li:hover h3 {
   color: #66aa3c;
@@ -2937,7 +2942,7 @@ Testimonials Style
   top: 50%;
   transform: translateY(-50%);
   left: -90px;
-  background-color: #e5e5e5;
+  background-color: #66aa3c;
   border: none;
   height: 55px;
   width: 55px;
@@ -4550,7 +4555,8 @@ Go To Top Style
   font-size: 30px;
   border-radius: 100%;
   text-align: center;
-  background-color: #e5e5e5;
+  background-color: #00803F;
+  color: #32CD32;
   margin: auto;
   margin-bottom: 25px;
   transition: all ease 0.5s;
@@ -4783,4 +4789,13 @@ body::-webkit-scrollbar-thumb {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #66aa3c;
+}
+
+/* Custom CSS --*/
+
+.underline-text-decoration-on-hover:hover {
+    text-decoration: underline;
+    transform: scaleX(1.1);
+    transition: all 0.3s ease-in-out;
+
 }
