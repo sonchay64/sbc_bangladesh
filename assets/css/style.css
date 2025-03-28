@@ -597,6 +597,14 @@ Navbar Area Style
 .navbar-area.nav-style-1 .desktop-nav .navbar-brand .main-logo {
   display: none;
 }
+
+/*---------- Custom --------------*/
+.logo-size-secondary-page
+{
+  width: 335px;
+  height: 76px;
+}
+/*---------- Custom --------------*/
 .navbar-area.nav-style-1 .desktop-nav .others-options {
   text-align: right !important;
   display: inline-block;
@@ -1864,7 +1872,8 @@ Services Style
   position: relative;
   display: block;
   text-transform: capitalize;
-  font-size: 18px;
+/*  font-size: 18px;*/
+  font-size: 0.9rem;
   font-weight: 600;
   padding: 20px;
   cursor: pointer;
@@ -4391,6 +4400,52 @@ Page Hedaer Style
   z-index: -1;
 }
 
+
+/* --------- Start : Custom Page Header --------*/
+.page-header-service-one
+{
+  /* file:///opt/sbc/live-25mar/live/assets/images/banner/headerbanner/sustainable-business-model.jpg */
+
+  background: url('../images/banner/headerbanner/sustainable-business-model.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+}
+
+.page-header-service-one::after , .page-header-service-two::after, .page-header-service-three::after,.page-header-service-four::after,.page-header-csb-centre::after{
+    content: "";
+    display: block;
+    padding-top: 20%; /* Adjust aspect ratio */
+}
+
+.page-header-service-two
+{
+  background: url('../images/banner/headerbanner/esg-advisory.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+}
+
+.page-header-service-three
+{
+  background: url('../images/banner/headerbanner/digital-marketing.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+}
+
+.page-header-service-four
+{
+  background: url('../images/banner/headerbanner/skill-training.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+}
+
+.page-header-csb-centre
+{
+  background: url('../images/banner/headerbanner/sbc-centre.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+}
+/* --------- End : Custom Page Header --------*/
+
 /*
 Go To Top Style
 ======================================================*/
@@ -4799,9 +4854,16 @@ body::-webkit-scrollbar-thumb {
 
 /* Custom CSS --*/
 
+
+
 .underline-text-decoration-on-hover:hover {
     text-decoration: underline;
     transform: scaleX(1.1);
     transition: all 0.3s ease-in-out;
 
+}
+
+.text-justify
+{
+  text-align: justify !important;
 }
